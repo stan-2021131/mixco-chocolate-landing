@@ -4,7 +4,7 @@ Prototipo web interactivo de alto impacto diseñado para validar la demanda come
 
 ---
 
-## 🌟 Características Principales
+## Características Principales
 
 * **Estética Editorial & Paleta Cacao:** Interfaz diseñada con tonos café chocolate tostado (`#1E130C`, `#271911`) y acentos en ámbar cálido (`#F59E0B`), con tipografías Google Fonts (*Plus Jakarta Sans* y *Playfair Display*).
 * **Navegación Fluida:**
@@ -25,7 +25,7 @@ Prototipo web interactivo de alto impacto diseñado para validar la demanda come
 
 ---
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 ```text
 mixco-chocolate-landing/
@@ -44,7 +44,7 @@ mixco-chocolate-landing/
 
 ---
 
-## 🚀 Cómo Ejecutar en Local
+## Cómo Ejecutar en Local
 
 Dado que el proyecto utiliza Vanilla HTML/CSS/JS y realiza peticiones `fetch()` para el archivo `data/content.json`, se recomienda levantarlo con un servidor local:
 
@@ -64,7 +64,7 @@ Abre la carpeta en VS Code y haz clic derecho en `index.html` > **Open with Live
 
 ---
 
-## 🛠️ Tecnologías y Librerías
+## Tecnologías y Librerías
 
 * **HTML5 Semántico:** Con microdatos Schema.org (`Product`, `Offer`) y etiquetas Open Graph / Twitter Cards para SEO.
 * **Vanilla CSS3:** Variables CSS (Custom Properties), efectos de desenfoque de fondo (*backdrop-filter*), CSS Grid asimétrico y consultas de medios para dispositivos móviles.
