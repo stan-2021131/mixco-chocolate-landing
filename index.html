@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+
+  <!-- ==========================================
+       OPTIMIZACIÓN SEO Y METADATOS PRINCIPALES
+       ========================================== -->
+  <title data-i18n="meta.title">ChocoMixco | Chocolate de Mesa Artesanal de Mixco</title>
+  <meta name="description"
+    content="Auténtico chocolate de mesa artesanal de Mixco, Guatemala. 100% natural, tabletas redondas de fácil disolución y empaque higiénico sellado para atol casero."
+    data-i18n-attr="content:meta.description" />
+  <meta name="keywords"
+    content="chocolate artesanal mixco, atol de chocolate tradicional guatemala, cacao puro, chocomixco artesanal, chocolate de mesa"
+    data-i18n-attr="content:meta.keywords" />
+  <meta name="author" content="Equipo Emprendedor ChocoMixco - UVG" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="./" />
+
+  <!-- Metadatos de Color de Navegador / Fondo Café Cacao -->
+  <meta name="theme-color" content="#1B120C" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph / Previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ChocoMixco | Chocolate de Mesa Artesanal de Mixco"
+    data-i18n-attr="content:meta.title" />
+  <meta property="og:description"
+    content="Auténtico chocolate de mesa artesanal de Mixco, Guatemala. 100% cacao y canela en empaque higiénico sellado."
+    data-i18n-attr="content:meta.description" />
+  <meta property="og:image" content="assets/img/hero_bg.jpg" />
+  <meta property="og:locale" content="es_GT" />
+  <meta property="og:site_name" content="ChocoMixco" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ChocoMixco | Chocolate de Mesa Artesanal" data-i18n-attr="content:meta.title" />
+  <meta name="twitter:description" content="Auténtico chocolate de mesa artesanal de Mixco, Guatemala. 100% natural."
+    data-i18n-attr="content:meta.description" />
+  <meta name="twitter:image" content="assets/img/hero_bg.jpg" />
+
+  <!-- Tipografía Consistente: Plus Jakarta Sans para toda la UI + Acentos Editoriales en Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- GSAP Core y ScrollTrigger desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Hoja de Estilos de Alto Impacto -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Marcado Estructurado Schema.org (JSON-LD) para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Paquete Familiar de Chocolate de Mesa Mixqueño",
+    "image": [
+      "assets/img/packaging.jpg",
+      "assets/img/hero_bg.jpg"
+    ],
+    "description": "Chocolate de mesa artesanal elaborado con receta tradicional de Mixco, 100% natural, en tabletas redondas de fácil disolución y empaque sellado higiénico.",
+    "brand": {
+      "@type": "Brand",
+      "name": "ChocoMixco"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "GTQ",
+      "price": "22.00",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  }
+  </script>
+</head>
+
+<body class="chocolate-roast-theme">
+
+  <!-- ========================================================
+       BARRA DE NAVEGACIÓN DISCRETA (CÁPSULA ELEGANTE FLOTANTE)
+       ======================================================== -->
+  <div class="nav-island-wrapper">
+    <header class="nav-island-bar" id="top">
+
+      <!-- Logotipo de la Marca -->
+      <a href="#top" class="brand-signature" aria-label="Ir al inicio de ChocoMixco">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+        </span>
+        <span class="brand-wordmark" data-brand="name">ChocoMixco</span>
+      </a>
+
+      <!-- Acciones de Navegación Compactas -->
+      <div class="nav-action-group">
+
+        <!-- Botón Rápido de Catálogo -->
+        <a href="#catalog" class="btn-nav-order" data-i18n="nav.cta">
+          <span>Pedir Q22</span>
+        </a>
+
+        <!-- Selector de Idioma Bilingüe -->
+        <button id="lang-toggle-btn" class="btn-lang-pill" type="button"
+          aria-label="Cambiar idioma entre Español e Inglés">
+          <svg class="lang-globe-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+            stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span id="lang-label" class="lang-code" data-i18n="nav.langBtn">EN</span>
+        </button>
+
+        <!-- Botón de Menú Lateral -->
+        <button class="btn-menu-pill" id="menu-toggle-btn" type="button" aria-expanded="false"
+          aria-controls="side-drawer-menu" aria-label="Abrir menú de navegación">
+          <span class="menu-icon-bars" aria-hidden="true">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+          </span>
+          <span class="menu-text">Menú</span>
+        </button>
+
+      </div>
+
+    </header>
+  </div>
+
+  <!-- ========================================================
+       MENÚ LATERAL EDITORIAL (SIDE DRAWER DE LUJO)
+       ======================================================== -->
+  <div class="drawer-backdrop" id="side-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="side-drawer-menu" id="side-drawer-menu" role="dialog" aria-modal="true" aria-label="Menú principal"
+    aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="brand-monogram" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+        </span>
+        <span class="brand-wordmark">ChocoMixco</span>
+      </div>
+      <button type="button" class="drawer-close-btn" id="drawer-close-btn" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-links-list">
+        <li>
+          <a href="#origin" class="drawer-link">
+            <span class="drawer-num">01</span>
+            <span class="drawer-label" data-i18n="nav.origin">Herencia y Tradición</span>
+          </a>
+        </li>
+        <li>
+          <a href="#preparation" class="drawer-link">
+            <span class="drawer-num">02</span>
+            <span class="drawer-label" data-i18n="nav.prep">Modo de Preparación</span>
+          </a>
+        </li>
+        <li>
+          <a href="#why-us" class="drawer-link">
+            <span class="drawer-num">03</span>
+            <span class="drawer-label" data-i18n="nav.why">¿Por qué nosotros?</span>
+          </a>
+        </li>
+        <li>
+          <a href="#catalog" class="drawer-link">
+            <span class="drawer-num">04</span>
+            <span class="drawer-label" data-i18n="nav.catalog">Catálogo de Productos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#how-to-order" class="drawer-link">
+            <span class="drawer-num">05</span>
+            <span class="drawer-label" data-i18n="nav.order">Ruta de Envíos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#feedback" class="drawer-link highlight">
+            <span class="drawer-num">06</span>
+            <span class="drawer-label" data-i18n="nav.feedback">Validación Académica</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="#catalog" class="btn-drawer-cta" id="drawer-cta-btn" data-i18n="hero.ctaPrimary">
+        Pedir Paquete Familiar • Q22
+      </a>
+      <p class="drawer-academic-notice" data-i18n="banner.text">
+        Prototipo académico de validación de mercado • Universidad del Valle de Guatemala.
+      </p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ========================================================
+         HERO SECTION: FONDO DE IMAGEN COMPLETO & TIPOGRAFÍA ELEGANTE
+         (Inspirado en la Referencia 1 del usuario)
+         ======================================================== -->
+    <section class="panoramic-hero" id="hero" aria-labelledby="hero-main-title">
+
+      <!-- Fondo Fotográfico Completo con Scrim de Café Cacao -->
+      <div class="hero-backdrop-image-layer" aria-hidden="true">
+        <img src="assets/img/hero_bg.jpg"
+          alt="Cocina rústica guatemalteca con fuego de leña y taza humeante de atol de chocolate artesanal"
+          class="hero-bg-photo" loading="eager" fetchpriority="high" />
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container hero-content-center">
+
+        <h1 class="hero-headline-wide" id="hero-main-title" data-i18n="hero.title">
+          EL AUTÉNTICO CHOCOLATE DE MESA ARTESANAL
+        </h1>
+
+        <p class="hero-lead-text" data-i18n="hero.subtitle">
+          La receta ancestral mixqueña de cacao puro y canela en rama, en prácticas tabletas redondas de disolución
+          rápida y empaque higiénico sellado.
+        </p>
+
+        <!-- Acciones Centradas -->
+        <div class="hero-button-row">
+          <a href="#catalog" class="btn-radiant-gold">
+            <span class="btn-text" data-i18n="hero.ctaPrimary">Pedir Paquete Familiar • Q22</span>
+            <span class="btn-arrow-bubble" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </a>
+
+          <a href="#origin" class="btn-translucent-ghost" data-i18n="hero.ctaSecondary">
+            Explorar la Tradición
+          </a>
+        </div>
+
+        <!-- Micro-indicadores de Confianza -->
+        <div class="hero-trust-bar">
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+            </svg>
+            <span data-i18n="hero.trust1">100% Cacao y Canela</span>
+          </div>
+
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+            <span data-i18n="hero.trust2">Disuelve en 2 Minutos</span>
+          </div>
+
+          <div class="trust-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span data-i18n="hero.trust3">Empaque Hermético Inocuo</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         ORIGEN: GALERÍA DE RAÍCES MIXQUEÑAS (Ref 2)
+         ======================================================== -->
+    <section class="section mosaic-heritage-section" id="origin" aria-labelledby="origin-heading">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-eyebrow-minimal" data-i18n="origin.tag">Herencia Local</span>
+          <h2 class="section-title-display" id="origin-heading" data-i18n="origin.title">
+            Las raíces vivas del chocolate mixqueño
+          </h2> Las raíces vivas de la tierra chocolatera
+          </h2>
+          <p class="section-subtitle-text" data-i18n="origin.subtitle">
+            Un recorrido visual por el centro colonial de Mixco, los comales de leña y las manos que preservan el sabor
+            original.
+          </p>
+        </div>
+
+        <!-- Mosaico Galería Estilo Masonry Asimétrico -->
+        <div class="mosaic-gallery-grid">
+
+          <!-- Mosaico 1: Iglesia Colonial de Mixco (Ancho) -->
+          <div class="mosaic-item mosaic-item-wide">
+            <div class="mosaic-image-card">
+              <img src="assets/img/mixco_church.jpg"
+                alt="Parroquia de Santo Domingo de Guzmán y calles empedradas en el centro de Mixco"
+                class="mosaic-photo" loading="lazy" />
+              <div class="mosaic-overlay-caption">
+                <span class="caption-tag">Mixco Colonial</span>
+                <p data-i18n="origin.caption1">Parroquia de Santo Domingo de Guzmán y calles empedradas de Mixco</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mosaico 2: Tostado de Cacao en Comal (Cuadrado / Detalle) -->
+          <div class="mosaic-item mosaic-item-square">
+            <div class="mosaic-image-card">
+              <img src="assets/img/mixco_comal.jpg"
+                alt="Granos de cacao y canela tostándose sobre comal de barro a fuego de leña" class="mosaic-photo"
+                loading="lazy" />
+              <div class="mosaic-overlay-caption">
+                <span class="caption-tag">Comal y Leña</span>
+                <p data-i18n="origin.caption2">Tostado tradicional de cacao sobre comal de barro a fuego de leña</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mosaico 3: Molienda en Metate de Piedra -->
+          <div class="mosaic-item mosaic-item-square">
+            <div class="mosaic-image-card">
+              <img src="assets/img/tradition.jpg"
+                alt="Manos artesanas moliendo cacao en metate de piedra volcánica en Mixco" class="mosaic-photo"
+                loading="lazy" />
+              <div class="mosaic-overlay-caption">
+                <span class="caption-tag">Metate Volcánico</span>
+                <p data-i18n="origin.caption4">Molienda en metate de piedra volcánica ancestral</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mosaico 4: Secado en Hojas de Plátano (Ancho) -->
+          <div class="mosaic-item mosaic-item-wide">
+            <div class="mosaic-image-card">
+              <img src="assets/img/mixco_banana_leaves.jpg"
+                alt="Tabletas de chocolate artesanal secándose sobre hojas frescas de plátano en un patio colonial"
+                class="mosaic-photo" loading="lazy" />
+              <div class="mosaic-overlay-caption">
+                <span class="caption-tag">Moldeado Tradicional</span>
+                <p data-i18n="origin.caption3">Moldeado de tabletas artesanales secándose sobre hojas frescas de plátano
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Narrativa del Oficio en Tarjeta de Cristal Cacao -->
+        <div class="heritage-narrative-enclosure">
+          <div class="narrative-columns">
+            <p class="narrative-text" data-i18n="origin.p1">
+              Mixco es conocido históricamente en Guatemala por sus leyendas y la maestría culinaria de sus productoras
+              de chocolate. Durante generaciones, las familias mixqueñas han custodiado el secreto del tostado en comal
+              de barro, la molienda rítmica en piedra volcánica y el balance entre cacao selecto y canela aromática.
+            </p>
+            <p class="narrative-text" data-i18n="origin.p2">
+              ChocoMixco une este legado con estándares contemporáneos de higiene y conservación hermética, para que
+              disfrutes de una taza con auténtica memoria gastronómica sin salir de casa.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         MODO DE PREPARACIÓN: FLUJO VERTICAL CON CUADRO CENTRAL
+         (Inspirado en la Referencia 3 del usuario - Diagrama Paint)
+         ======================================================== -->
+    <section class="section prep-interactive-section" id="preparation" aria-labelledby="prep-heading">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-eyebrow-minimal" data-i18n="prep.tag">El Ritual</span>
+          <h2 class="section-title-display" id="prep-heading" data-i18n="prep.title">
+            Modo de preparación en tres pasos
+          </h2>
+          <p class="section-subtitle-text" data-i18n="prep.subtitle">
+            Selecciona cada paso para descubrir el secreto de un atol espeso, aromático y sin grumos.
+          </p>
+        </div>
+
+        <!-- Disposición: Lista Vertical de Pasos a la Izquierda + Gran Cuadro de Imagen a la Derecha -->
+        <div class="prep-diagram-layout">
+
+          <!-- Columna Izquierda: 3 Tarjetas Verticales -->
+          <div class="prep-steps-column" role="tablist" aria-label="Pasos de preparación">
+
+            <!-- Paso 1 -->
+            <button type="button" class="prep-step-card active" id="step-tab-1" role="tab" aria-selected="true"
+              aria-controls="prep-display-panel" data-step="1">
+              <div class="step-card-meta">
+                <span class="step-num-badge" data-i18n="prep.step1.num">01</span>
+                <span class="step-duration-badge" data-i18n="prep.step1.badge">Fuego Medio • 90°C</span>
+              </div>
+              <h3 class="step-card-heading" data-i18n="prep.step1.title">Calentar el Líquido</h3>
+              <p class="step-card-snippet" data-i18n="prep.step1.desc">
+                Hierve de 2 a 3 tazas de leche entera o agua en una olla según la consistencia deseada.
+              </p>
+              <div class="step-active-indicator" aria-hidden="true"></div>
+            </button>
+
+            <!-- Paso 2 -->
+            <button type="button" class="prep-step-card" id="step-tab-2" role="tab" aria-selected="false"
+              aria-controls="prep-display-panel" data-step="2">
+              <div class="step-card-meta">
+                <span class="step-num-badge" data-i18n="prep.step2.num">02</span>
+                <span class="step-duration-badge" data-i18n="prep.step2.badge">Sin Rallar • 2 Minutos</span>
+              </div>
+              <h3 class="step-card-heading" data-i18n="prep.step2.title">Disolver la Tableta</h3>
+              <p class="step-card-snippet" data-i18n="prep.step2.desc">
+                Añade una tableta redonda de ChocoMixco directamente al líquido caliente sin necesidad de rallarla.
+              </p>
+              <div class="step-active-indicator" aria-hidden="true"></div>
+            </button>
+
+            <!-- Paso 3 -->
+            <button type="button" class="prep-step-card" id="step-tab-3" role="tab" aria-selected="false"
+              aria-controls="prep-display-panel" data-step="3">
+              <div class="step-card-meta">
+                <span class="step-num-badge" data-i18n="prep.step3.num">03</span>
+                <span class="step-duration-badge" data-i18n="prep.step3.badge">Espuma Tradicional</span>
+              </div>
+              <h3 class="step-card-heading" data-i18n="prep.step3.title">Espumar y Servir</h3>
+              <p class="step-card-snippet" data-i18n="prep.step3.desc">
+                Revuelve vigorosamente con molinillo tradicional de madera o cuchara hasta levantar espuma y sirve de
+                inmediato.
+              </p>
+              <div class="step-active-indicator" aria-hidden="true"></div>
+            </button>
+
+          </div>
+
+          <!-- Columna Derecha / Central: Cuadro Grande Dinámico de Visualización -->
+          <div class="prep-display-frame" id="prep-display-panel" role="tabpanel" aria-labelledby="step-tab-1">
+            <div class="display-visual-box">
+              <img src="assets/img/hero.jpg" alt="Demostración visual del paso de preparación del chocolate artesanal"
+                class="display-focal-image" id="prep-display-img" />
+              <div class="display-scrim" aria-hidden="true"></div>
+
+              <!-- Badge Flotante del Paso Actual -->
+              <div class="display-floating-badge" id="prep-display-badge">
+                <span class="badge-dot" aria-hidden="true"></span>
+                <span id="prep-badge-text">Paso 01: Fuego Medio • 90°C</span>
+              </div>
+            </div>
+
+            <div class="display-details-bar">
+              <div class="details-title-row">
+                <h4 class="display-step-title" id="prep-display-title">Calentar el Líquido</h4>
+                <span class="display-step-counter" id="prep-step-counter">1 de 3</span>
+              </div>
+              <p class="display-tip-text" id="prep-display-tip" data-i18n="prep.step1.tip">
+                Consejo: Para una textura cremosa de cafetería artesanal, mezcla mitad leche entera y mitad agua.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         ¿POR QUÉ NOSOTROS? (TABS INTERACTIVOS ESTILO GITHUB)
+         (Inspirado en la Referencia 4 del usuario)
+         ======================================================== -->
+    <section class="section why-us-tabs-section" id="why-us" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-eyebrow-minimal" data-i18n="why.tag">Nuestra Propuesta</span>
+          <h2 class="section-title-display" id="why-heading" data-i18n="why.title">
+            ¿Por qué elegir ChocoMixco?
+          </h2>
+          <p class="section-subtitle-text" data-i18n="why.subtitle">
+            Superamos las deficiencias de los chocolates industriales y la informalidad de los mercados cantonales.
+          </p>
+        </div>
+
+        <!-- Barra de Píldoras Segmentadas Estilo GitHub -->
+        <div class="github-pill-nav-bar" role="tablist" aria-label="Diferenciales de producto">
+          <button type="button" class="gh-pill-tab active" id="why-tab-1" role="tab" aria-selected="true" data-tab="1"
+            data-i18n="why.tab1">
+            Cacao 100% Puro
+          </button>
+          <button type="button" class="gh-pill-tab" id="why-tab-2" role="tab" aria-selected="false" data-tab="2"
+            data-i18n="why.tab2">
+            Disolución Rápida
+          </button>
+          <button type="button" class="gh-pill-tab" id="why-tab-3" role="tab" aria-selected="false" data-tab="3"
+            data-i18n="why.tab3">
+            Empaque Hermético
+          </button>
+          <button type="button" class="gh-pill-tab" id="why-tab-4" role="tab" aria-selected="false" data-tab="4"
+            data-i18n="why.tab4">
+            Oficio Artesanal
+          </button>
+        </div>
+
+        <!-- Contenedor del Panel Activo -->
+        <div class="github-tab-content-panel">
+
+          <!-- Panel 1: Cacao Puro -->
+          <div class="gh-feature-view active" id="why-panel-1">
+            <div class="feature-content-side">
+              <div class="feature-gold-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                </svg>
+              </div>
+              <h3 class="feature-panel-title" data-i18n="why.card1.title">Receta 100% Natural sin Grasas Añadidas</h3>
+              <p class="feature-panel-desc" data-i18n="why.card1.desc">
+                Las marcas de supermercado sustituyen el cacao por azúcar refinada y mantecas hidrogenadas. ChocoMixco
+                utiliza únicamente cacao criollo selecto, canela en rama y azúcar en su proporción justa.
+              </p>
+
+              <div class="feature-stat-metrics">
+                <div class="metric-pill">
+                  <span class="metric-bold" data-i18n="why.card1.stat1">0% Grasas Hidrogenadas</span>
+                </div>
+                <div class="metric-pill gold">
+                  <span class="metric-bold" data-i18n="why.card1.stat2">100% Ingredientes Nobles</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-visual-side">
+              <img src="assets/img/mixco_comal.jpg" alt="Tostado tradicional de cacao" class="feature-side-photo"
+                loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Panel 2: Disolución Rápida -->
+          <div class="gh-feature-view" id="why-panel-2">
+            <div class="feature-content-side">
+              <div class="feature-gold-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <h3 class="feature-panel-title" data-i18n="why.card2.title">Disolución Rápida en Minutos</h3>
+              <p class="feature-panel-desc" data-i18n="why.card2.desc">
+                Se acabaron los ralladores peligrosos y los trozos duros en el fondo de la taza. El moldeado circular
+                facilita una integración homogénea inmediata.
+              </p>
+
+              <div class="feature-stat-metrics">
+                <div class="metric-pill gold">
+                  <span class="metric-bold" data-i18n="why.card2.stat1">120s Tiempo de Fusión</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-bold" data-i18n="why.card2.stat2">0% Grumos en Taza</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-visual-side">
+              <img src="assets/img/hero.jpg" alt="Atol espumoso disuelto a la perfección" class="feature-side-photo"
+                loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Panel 3: Empaque Hermético -->
+          <div class="gh-feature-view" id="why-panel-3">
+            <div class="feature-content-side">
+              <div class="feature-gold-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <h3 class="feature-panel-title" data-i18n="why.card3.title">Empaque Seguro e Inocuo</h3>
+              <p class="feature-panel-desc" data-i18n="why.card3.desc">
+                El chocolate artesanal tradicional de mercado sufre de humedad, polvo y manipulación. Nuestro empaque
+                sellado protege contra el calor y preserva los aromas esenciales.
+              </p>
+
+              <div class="feature-stat-metrics">
+                <div class="metric-pill gold">
+                  <span class="metric-bold" data-i18n="why.card3.stat1">Sellado Térmico Grado Alimentario</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-bold" data-i18n="why.card3.stat2">Barrera Anti-Humedad</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-visual-side">
+              <img src="assets/img/packaging.jpg" alt="Empaque sellado kraft de ChocoMixco" class="feature-side-photo"
+                loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Panel 4: Oficio Artesanal -->
+          <div class="gh-feature-view" id="why-panel-4">
+            <div class="feature-content-side">
+              <div class="feature-gold-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+              <h3 class="feature-panel-title" data-i18n="why.card4.title">Impacto Directo en Productoras Locales</h3>
+              <p class="feature-panel-desc" data-i18n="why.card4.desc">
+                Cada paquete apoya directamente a mujeres artesanas de Mixco, rescatando una tradición culinaria en
+                peligro de industrializarse.
+              </p>
+
+              <div class="feature-stat-metrics">
+                <div class="metric-pill gold">
+                  <span class="metric-bold" data-i18n="why.card4.stat1">Comercio Justo Mixqueño</span>
+                </div>
+                <div class="metric-pill">
+                  <span class="metric-bold" data-i18n="why.card4.stat2">Receta Centenaria</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-visual-side">
+              <img src="assets/img/mixco_banana_leaves.jpg" alt="Artesana preparando tabletas sobre hojas de plátano"
+                class="feature-side-photo" loading="lazy" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CATÁLOGO DE PRODUCTOS: CARRUSEL MARKETPLACE CON MINI-CARDS
+         ======================================================== -->
+    <section class="section catalog-carousel-section" id="catalog" aria-labelledby="catalog-heading">
+      <div class="container">
+
+        <div class="catalog-header-split">
+          <div>
+            <span class="section-eyebrow-minimal" data-i18n="catalog.tag">Presentaciones</span>
+            <h2 class="section-title-display" id="catalog-heading" data-i18n="catalog.title">
+              Nuestros Paquetes Artesanales
+            </h2>
+            <p class="section-subtitle-text" data-i18n="catalog.subtitle">
+              Explora nuestras presentaciones piloto para degustar o compartir en familia.
+            </p>
+          </div>
+
+          <!-- Controles de Navegación del Carrusel -->
+          <div class="carousel-nav-arrows">
+            <button type="button" class="btn-carousel-arrow" id="carousel-btn-prev" aria-label="Ver producto anterior">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12" />
+                <polyline points="12 19 5 12 12 5" />
+              </svg>
+            </button>
+            <button type="button" class="btn-carousel-arrow" id="carousel-btn-next" aria-label="Ver siguiente producto">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Contenedor Desplazable del Carrusel -->
+        <div class="marketplace-carousel-track" id="marketplace-carousel">
+
+          <!-- Mini-Card 1: Paquete Familiar Piloto (Estrella Q22) -->
+          <article class="marketplace-product-card card-featured-pilot">
+            <div class="mp-card-media">
+              <img src="assets/img/packaging.jpg" alt="Paquete Familiar ChocoMixco 200g" class="mp-photo"
+                loading="lazy" />
+              <span class="mp-badge-tag pilot" data-i18n="catalog.prod1.badge">Piloto Estrella</span>
+            </div>
+
+            <div class="mp-card-body">
+              <span class="mp-specs-line" data-i18n="catalog.prod1.specs">200 g netos • 4 tabletas • Rinde 8 a 10
+                tazas</span>
+              <h3 class="mp-product-title" data-i18n="catalog.prod1.name">Paquete Familiar Clásico</h3>
+              <p class="mp-product-desc" data-i18n="catalog.prod1.desc">
+                El balance tradicional de cacao selecto y canela en rama. La opción favorita para las tardes familiares.
+              </p>
+
+              <div class="mp-card-footer">
+                <div class="mp-price-tag">
+                  <span class="mp-currency">Q</span>
+                  <span class="mp-amount">22.00</span>
+                </div>
+
+                <button type="button" class="btn-mp-order" aria-label="Pedir Paquete Familiar por WhatsApp">
+                  <span>Pedir</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mini-Card 2: Chocolate en Polvo Artesanal Q22 -->
+          <article class="marketplace-product-card">
+            <div class="mp-card-media">
+              <img src="assets/img/packaging_2.jpg" alt="Chocolate en Polvo Artesanal ChocoMixco 200g" class="mp-photo" loading="lazy" />
+              <span class="mp-badge-tag" data-i18n="catalog.prod2.badge">Versión en Polvo</span>
+            </div>
+
+            <div class="mp-card-body">
+              <span class="mp-specs-line" data-i18n="catalog.prod2.specs">200 g netos • En polvo • Rinde 8 a 10 tazas</span>
+              <h3 class="mp-product-title" data-i18n="catalog.prod2.name">Chocolate en Polvo Artesanal</h3>
+              <p class="mp-product-desc" data-i18n="catalog.prod2.desc">
+                La misma receta tradicional de cacao y canela en fino polvo artesanal. Disolución inmediata para disfrutar en cualquier momento.
+              </p>
+
+              <div class="mp-card-footer">
+                <div class="mp-price-tag">
+                  <span class="mp-currency">Q</span>
+                  <span class="mp-amount">22.00</span>
+                </div>
+
+                <button type="button" class="btn-mp-order" aria-label="Pedir Chocolate en Polvo por WhatsApp">
+                  <span>Pedir</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mini-Card 3: Pack Dúo Desayuno Q12 -->
+          <article class="marketplace-product-card">
+            <div class="mp-card-media">
+              <img src="assets/img/packaging.jpg" alt="Pack Dúo Desayuno" class="mp-photo" loading="lazy" />
+              <span class="mp-badge-tag" data-i18n="catalog.prod3.badge">Degustación</span>
+            </div>
+
+            <div class="mp-card-body">
+              <span class="mp-specs-line" data-i18n="catalog.prod3.specs">100 g netos • 2 tabletas • Rinde 4 a 5
+                tazas</span>
+              <h3 class="mp-product-title" data-i18n="catalog.prod3.name">Pack Dúo Desayuno</h3>
+              <p class="mp-product-desc" data-i18n="catalog.prod3.desc">
+                La porción perfecta para una pareja o para conocer el auténtico sabor mixqueño por primera vez.
+              </p>
+
+              <div class="mp-card-footer">
+                <div class="mp-price-tag">
+                  <span class="mp-currency">Q</span>
+                  <span class="mp-amount">12.00</span>
+                </div>
+
+                <button type="button" class="btn-mp-order" aria-label="Pedir Pack Dúo por WhatsApp">
+                  <span>Pedir</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mini-Card 4: Paquete Especial de Mixco Q50 -->
+          <article class="marketplace-product-card">
+            <div class="mp-card-media">
+              <img src="assets/img/packaging_3.jpg" alt="Paquete Especial de Mixco" class="mp-photo" loading="lazy" />
+              <span class="mp-badge-tag gold" data-i18n="catalog.prod4.badge">Regalo Especial</span>
+            </div>
+
+            <div class="mp-card-body">
+              <span class="mp-specs-line" data-i18n="catalog.prod4.specs">400 g netos • 8 tabletas surtidas</span>
+              <h3 class="mp-product-title" data-i18n="catalog.prod4.name">Paquete Especial de Mixco</h3>
+              <p class="mp-product-desc" data-i18n="catalog.prod4.desc">
+                Presentación de regalo con caja artesanal de madera y molinillo tradicional incluido para ocasiones especiales.
+              </p>
+
+              <div class="mp-card-footer">
+                <div class="mp-price-tag">
+                  <span class="mp-currency">Q</span>
+                  <span class="mp-amount">50.00</span>
+                </div>
+
+                <button type="button" class="btn-mp-order" aria-label="Pedir Paquete Especial por WhatsApp">
+                  <span>Pedir</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         RUTA DE ENTREGA / ENVÍOS: FLUJO CON ESQUINA CURVADA
+         (Inspirado en la Referencia 5 del usuario)
+         ======================================================== -->
+    <section class="section shipping-arch-section" id="how-to-order" aria-labelledby="order-heading">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-eyebrow-minimal" data-i18n="order.tag">Logística</span>
+          <h2 class="section-title-display" id="order-heading" data-i18n="order.title">
+            ¿Cómo pedir y recibir tu chocolate?
+          </h2>
+          <p class="section-subtitle-text" data-i18n="order.subtitle">
+            Un flujo ágil y confiable desde los comales de Mixco hasta la puerta de tu hogar.
+          </p>
+        </div>
+
+        <!-- Fila de Tarjetas con Esquina Superior Curvada (Arch-Top) -->
+        <div class="arch-flow-cards-grid">
+
+          <!-- Paso 01 -->
+          <article class="arch-step-card step-card-1">
+            <div class="arch-header-row">
+              <span class="arch-step-number" data-i18n="order.step1.num">01</span>
+              <div class="arch-circle-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="arch-step-title" data-i18n="order.step1.title">SOLICITUD</h3>
+            <p class="arch-step-desc" data-i18n="order.step1.desc">
+              Selecciona el paquete deseado y haz clic en pedir para iniciar tu orden simulada.
+            </p>
+          </article>
+
+          <!-- Paso 02 -->
+          <article class="arch-step-card step-card-2">
+            <div class="arch-header-row">
+              <span class="arch-step-number" data-i18n="order.step2.num">02</span>
+              <div class="arch-circle-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                  <path d="M2 12h20" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="arch-step-title" data-i18n="order.step2.title">COORDINACIÓN</h3>
+            <p class="arch-step-desc" data-i18n="order.step2.desc">
+              Definimos dirección en la capital o despacho departamental por paquetería.
+            </p>
+          </article>
+
+          <!-- Paso 03 -->
+          <article class="arch-step-card step-card-3">
+            <div class="arch-header-row">
+              <span class="arch-step-number" data-i18n="order.step3.num">03</span>
+              <div class="arch-circle-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13" />
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="arch-step-title" data-i18n="order.step3.title">DESPACHO</h3>
+            <p class="arch-step-desc" data-i18n="order.step3.desc">
+              Tu paquete es embalado en empaque hermético protegido contra calor y golpes.
+            </p>
+          </article>
+
+          <!-- Paso 04 -->
+          <article class="arch-step-card step-card-4">
+            <div class="arch-header-row">
+              <span class="arch-step-number" data-i18n="order.step4.num">04</span>
+              <div class="arch-circle-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <polyline points="3.29 7 12 12 20.71 7" />
+                  <line x1="12" y1="22" x2="12" y2="12" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="arch-step-title" data-i18n="order.step4.title">ENTREGA Y PAGO</h3>
+            <p class="arch-step-desc" data-i18n="order.step4.desc">
+              Recibe en tu puerta y abona cómodamente en efectivo contra entrega o transferencia.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         VALIDACIÓN DE MERCADO Y RETROALIMENTACIÓN (GOOGLE FORMS)
+         ======================================================== -->
+    <section class="section feedback-study-section" id="feedback" aria-labelledby="feedback-heading">
+      <div class="container">
+
+        <div class="section-header-center">
+          <span class="section-eyebrow-minimal" data-i18n="feedback.tag">Estudio Académico</span>
+          <h2 class="section-title-display" id="feedback-heading" data-i18n="feedback.title">
+            Tu opinión hace posible este proyecto
+          </h2>
+          <p class="section-subtitle-text" data-i18n="feedback.subtitle">
+            Ayúdanos con 2 minutos a calibrar el precio, empaque y concepto del chocolate mixqueño.
+          </p>
+        </div>
+
+        <div class="feedback-enclosure-card">
+          <div class="feedback-intro-header">
+            <p class="feedback-explanation" data-i18n="feedback.desc">
+              Este sitio forma parte del estudio de validación de mercado para el proyecto de emprendimiento de la
+              Universidad del Valle de Guatemala (UVG). Tu retroalimentación nos permitirá validar si la calidad, el
+              precio proyectado de Q22.00 y el empaque higiénico satisfacen tus expectativas de compra.
+            </p>
+            <div class="feedback-pill-tags">
+              <span class="feedback-pill">
+                <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a10.99 10.99 0 00-.25 2.31c0 3.322 2.378 6.275 5 6.953 2.622-.678 5-3.631 5-6.953 0-.79-.089-1.56-.25-2.31l2.644-1.131a1 1 0 000-1.84l-7-3zM10 4.195l5.214 2.235L10 8.665 4.786 6.43 10 4.195z"/>
+                </svg>
+                Estudio UVG
+              </span>
+              <span class="feedback-pill">
+                <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                </svg>
+                2 Minutos
+              </span>
+              <span class="feedback-pill">
+                <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                100% Confidencial
+              </span>
+            </div>
+          </div>
+
+          <!-- Ventana de Formulario Integrada Elegante -->
+          <div class="forms-window-wrapper" id="google-forms-container">
+            <div class="forms-window-bar">
+              <div class="forms-window-left">
+                <span class="window-dot red" aria-hidden="true"></span>
+                <span class="window-dot amber" aria-hidden="true"></span>
+                <span class="window-dot green" aria-hidden="true"></span>
+                <span class="forms-window-title">Cuestionario de Validación • ChocoMixco</span>
+              </div>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSMwKmf6qAGeB3sj40GYjptw6-X4h-FK3nBrNTWp313OAA9Q/viewform"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="forms-fullscreen-link"
+                 title="Abrir formulario en pantalla completa">
+                <span>Abrir en nueva pestaña</span>
+                <svg viewBox="0 0 20 20" width="13" height="13" fill="currentColor" aria-hidden="true">
+                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="forms-iframe-frame">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeSMwKmf6qAGeB3sj40GYjptw6-X4h-FK3nBrNTWp313OAA9Q/viewform?embedded=true"
+                class="google-forms-iframe"
+                title="Encuesta Oficial de Validación ChocoMixco"
+                width="100%"
+                height="920"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                loading="lazy">Cargando encuesta de validación…</iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       BOTÓN FLOTANTE DE WHATSAPP (CON ANILLO RADIAL PULSANTE)
+       ======================================================== -->
+  <button type="button" class="floating-whatsapp-widget" id="floating-whatsapp-trigger"
+    aria-label="Abrir pedido simulado por WhatsApp" title="Simular pedido por WhatsApp">
+    <span class="widget-pulse-ring" aria-hidden="true"></span>
+    <span class="widget-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+      </svg>
+    </span>
+  </button>
+
+  <!-- ========================================================
+       MODAL DE VALIDACIÓN ACADÉMICA (LUXURY GLASS ARCHITECTURE)
+       ======================================================== -->
+  <div id="validation-modal" class="modal-backdrop-scrim" role="dialog" aria-modal="true" aria-labelledby="modal-head"
+    aria-hidden="true">
+    <div class="modal-surface-card">
+
+      <button type="button" class="btn-close-modal" id="modal-close-btn" aria-label="Cerrar modal">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <div class="modal-badge-row">
+        <span class="modal-tag-pill" data-i18n="modal.tag">Simulación Académica UVG</span>
+      </div>
+
+      <h3 class="modal-headline" id="modal-head" data-i18n="modal.title">
+        ¡Gracias por tu interés en ChocoMixco!
+      </h3>
+
+      <p class="modal-text" data-i18n="modal.message">
+        Has pulsado el botón de pedido. Este sitio es un prototipo académico de la Universidad del Valle de Guatemala
+        para evaluar la demanda real del chocolate artesanal de Mixco a Q22.00.
+      </p>
+
+      <p class="modal-text highlight" data-i18n="modal.message2">
+        Tu opinión sobre la propuesta de valor y el precio es lo más valioso para nosotros. ¿Nos ayudas contestando
+        nuestra breve encuesta?
+      </p>
+
+      <div class="modal-button-dock">
+        <button type="button" class="btn-modal-ghost" id="modal-dismiss-btn" data-i18n="modal.btnDismiss">
+          Seguir explorando
+        </button>
+        <a href="#feedback" class="btn-modal-amber" id="modal-action-btn" data-i18n="modal.btnAction">
+          Responder Encuesta de Validación
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PIE DE PÁGINA (CAFÉ CACAO & ORO)
+       ======================================================== -->
+  <footer class="cinematic-footer" role="contentinfo">
+    <div class="container footer-macro-grid">
+
+      <div class="footer-brand-segment">
+        <div class="footer-logo-lockup">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+          </svg>
+          <span data-brand="name">ChocoMixco</span>
+        </div>
+        <p class="footer-mission" data-i18n="footer.brandDesc">
+          Rescate y comercialización digital del auténtico chocolate de mesa artesanal de Mixco, elaborado por mujeres
+          productoras locales con ingredientes 100% naturales.
+        </p>
+      </div>
+
+      <div class="footer-academic-segment">
+        <div class="uvg-badge-label">Investigación de Mercado</div>
+        <p class="uvg-notice-text" data-i18n="footer.academicNotice">
+          Proyecto Académico de Validación de Mercado • Universidad del Valle de Guatemala (UVG)
+        </p>
+        <p class="uvg-origin-text" data-i18n="footer.origin">
+          Mixco, Guatemala
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-closing-bar">
+      <div class="container closing-inner">
+        <p class="closing-copyright" data-i18n="footer.copyright">
+          © 2026 ChocoMixco. Todos los derechos reservados.
+        </p>
+        <a href="#top" class="closing-back-link" aria-label="Volver arriba">
+          <span>Subir al inicio</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5" />
+            <polyline points="5 12 12 5 19 12" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Principal con Interactividad de Pestañas, Carrusel y GSAP -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
